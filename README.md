@@ -182,6 +182,10 @@ Query Params:
 
 ## Notas de versão
 
+### v1.0.1-240425
+
+- Atualização do README
+
 ### v1.0.0-240425
 
 - Atualização do README
