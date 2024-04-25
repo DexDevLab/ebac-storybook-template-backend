@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const fs = require("fs").promises;
+const fs = require("fs-extra");
 const cors = require("cors");
 const path = require("path");
 
@@ -43,9 +43,7 @@ async function getData() {
 async function setData(data) {
   const newFilePath = getDataFilePath("data2.json");
   await fs.writeFile(newFilePath, JSON.stringify(data));
-  await fs.rm(dataFilePath, {
-    force: true,
-  });
+  await fs.unlink(dataFilePath);
   await fs.rename(getDataFilePath("data2.json"), getDataFilePath("data.json"));
 }
 
