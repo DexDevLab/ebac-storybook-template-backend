@@ -2,12 +2,13 @@ const express = require("express");
 const app = express();
 const fs = require("fs").promises;
 const cors = require("cors");
+const path = require('path');
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
 
-const dataFilePath = "src/data/data.json";
+const dataFilePath = path.join(process.cwd(), "data/data.json");
 
 async function getData() {
   return await fs.readFile(dataFilePath, "utf8");
@@ -107,4 +108,4 @@ try {
   throw new Error(error);
 }
 
-app.listen(4000, () => console.log("Express Server started at port 4000"));
+app.listen(3000, () => console.log("Express Server started at port 3000"));
