@@ -57,6 +57,10 @@ Simplesmente publique o commit normalmente no branch principal (main). Com isso,
 
 ## Notas de versão
 
+### v0.0.11-beta-240425
+
+- Ajuste no script do Express
+
 ### v0.0.10-beta-240425
 
 - Ajuste no script do Express
