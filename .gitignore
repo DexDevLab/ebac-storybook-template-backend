@@ -38,5 +38,3 @@ yarn-error.log*
 # netlify
 functions
 .vercel
-
-/tmp
