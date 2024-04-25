@@ -8,8 +8,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
 
+const isDevelopment = (process.env.NODE_ENV || "development") === "development";
+
 function getDataFilePath(filename) {
-  if ((process.env.NODE_ENV || "development") === "development") {
+  if (isDevelopment) {
     return path.join(process.cwd(), "/tmp", filename);
   } else {
     return path.join("/tmp", filename);
@@ -35,7 +37,11 @@ async function checkFileExists(file) {
 async function getData() {
   const exists = await checkFileExists(dataFilePath);
   if (!exists) {
-    await fs.copyFile(dataFileSrcPath, dataFilePath);
+    if (isDevelopment) {
+      fs.cpSync(dataFileSrcPath, dataFilePath);
+    } else {
+      await fs.copyFile(dataFileSrcPath, dataFilePath);
+    }
   }
   return await fs.readFile(dataFilePath, "utf8");
 }
