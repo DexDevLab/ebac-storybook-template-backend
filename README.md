@@ -182,6 +182,10 @@ Query Params:
 
 ## Notas de versão
 
+### v1.0.0-240425
+
+- Atualização do README
+
 ### v0.0.12-beta-240425
 
 - Ajuste no script do Express
