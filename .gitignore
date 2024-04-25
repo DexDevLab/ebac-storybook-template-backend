@@ -38,3 +38,7 @@ yarn-error.log*
 # netlify
 functions
 .vercel
+
+/tmp
+/tmp/*
+/tmp/data.json
