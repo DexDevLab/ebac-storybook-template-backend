@@ -57,6 +57,10 @@ Simplesmente publique o commit normalmente no branch principal (main). Com isso,
 
 ## Notas de versão
 
+### v0.0.5-beta-240425
+
+- Ajuste no package.json para especificação de versão de Node para o Vercel
+
 ### v0.0.4-beta-240425
 
 - Ajuste no arquivo de configuração do Vercel
