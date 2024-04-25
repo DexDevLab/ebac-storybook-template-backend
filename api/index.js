@@ -8,19 +8,17 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
 
-function getDataFilePath() {
+function getDataFilePath(filename) {
   if ((process.env.NODE_ENV || "development") === "development") {
-    return path.join(process.cwd(), "/tmp", "data.json");
+    return path.join(process.cwd(), "/tmp", filename);
   } else {
-    return path.join("/tmp", "data.json");
+    return path.join("/tmp", filename);
   }
 }
 
 const dataFileSrcPath = path.join(process.cwd(), "data/data.json");
 
-const dataFilePath = getDataFilePath();
-
-console.log(dataFilePath);
+const dataFilePath = getDataFilePath("data.json");
 
 async function checkFileExists(file) {
   try {
@@ -43,7 +41,12 @@ async function getData() {
 }
 
 async function setData(data) {
-  await fs.writeFile(dataFilePath, JSON.stringify(data));
+  const newFilePath = getDataFilePath("data2.json");
+  await fs.writeFile(newFilePath, JSON.stringify(data));
+  await fs.rm(dataFilePath, {
+    force: true,
+  });
+  await fs.rename(getDataFilePath("data2.json"), getDataFilePath("data.json"));
 }
 
 try {
