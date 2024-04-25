@@ -8,11 +8,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
 
-const workdir = process.cwd();
+const dataFileSrcPath =   path.join(process.cwd(), 'data/data.json');
 
-const dataFileSrcPath = `${workdir}/data/data.json`;
-
-const dataFilePath = `${workdir}/tmp/data.json`;
+const dataFilePath = path.join(process.cwd(), 'tmp/data.json');
 
 async function checkFileExists(file) {
   try {
