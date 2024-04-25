@@ -57,6 +57,10 @@ Simplesmente publique o commit normalmente no branch principal (main). Com isso,
 
 ## Notas de versão
 
+### v0.0.3-beta-240425
+
+- Ajuste no arquivo de configuração do Vercel
+
 ### v0.0.2-beta-240425
 
 - Remoção de bibliotecas em desuso

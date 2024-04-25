@@ -1,7 +1,7 @@
 {
   "name": "ebac-storybook-template-backend",
   "description": "Template de Aplicação Backend Express JS para exercício do Módulo 14 da Seção 'React: do Zero ao Pro' do curso 'Profissão: Engenheiro Front-End' da Instituição EBAC - Escola Britânica de Artes Criativas e Tecnologia",
-  "version": "v0.0.2-beta-240425",
+  "version": "v0.0.3-beta-240425",
   "license": "MIT",
   "private": true,
   "scripts": {
