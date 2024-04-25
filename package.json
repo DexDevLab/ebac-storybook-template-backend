@@ -1,31 +1,19 @@
 {
   "name": "ebac-storybook-template-backend",
   "description": "Template de Aplicação Backend Express JS para exercício do Módulo 14 da Seção 'React: do Zero ao Pro' do curso 'Profissão: Engenheiro Front-End' da Instituição EBAC - Escola Britânica de Artes Criativas e Tecnologia",
-  "version": "v0.0.1-beta-240425",
+  "version": "v0.0.2-beta-240425",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "node src/express.js"
+    "start": "node src/index.js"
   },
   "dependencies": {
-    "@babel/preset-env": "^7.24.4",
-    "@babel/preset-react": "^7.24.1",
     "axios": "^1.6.8",
     "cors": "^2.8.5",
     "cross-var": "^1.1.0",
     "dotenv-cli": "^7.4.1",
     "express": "^4.19.2",
-    "flatted": "^3.3.1",
-    "serve": "^14.2.2"
-  },
-  "babel": {
-    "presets": [
-      "@babel/preset-env",
-      "@babel/preset-react"
-    ],
-    "plugins": [
-      "@babel/plugin-proposal-class-properties"
-    ]
+    "flatted": "^3.3.1"
   },
   "eslintConfig": {
     "extends": [

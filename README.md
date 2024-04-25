@@ -6,17 +6,15 @@
 <div align="center">
 
 <a href="https://www.javascript.com"><img src="https://img.shields.io/badge/JavaScript-%23323330.svg?logo=javascript&logoColor=%23F7DF1E" height="22" alt="JavaScript"/></a>
-<a href="https://nodejs.org/en/"><img src="https://img.shields.io/badge/node.js-6DA55F?logo=node.js&logoColor=white" height="22" alt="NodeJS"/></a>&nbsp;
+<a href="https://nodejs.org/en/"><img src="https://img.shields.io/badge/node.js-6DA55F?logo=node.js&logoColor=white" height="22" alt="NodeJS"/></a>
 <a href="https://expressjs.com/pt-br/"><img src="https://img.shields.io/badge/Express.js-404D59?logo=express" height="22" alt="ExpressJS"/></a>
 <br>
-<a href=""><img src="https://img.shields.io/badge/maintenance-as--is-yellow.svg" height="22" alt="Maintenance-as-is"/></a>&nbsp;
+<a href=""><img src="https://img.shields.io/badge/maintenance-as--is-yellow.svg" height="22" alt="Maintenance-as-is"/></a>
 <a href=""><img src="https://img.shields.io/github/last-commit/dexdevlab/ebac-storybook-template-backend" height="22" alt="LastCommit"></a>
+<a href=""><img src="https://img.shields.io/github/v/release/dexdevlab/ebac-storybook-template-backend" height="22" alt="Version"/></a>
 <br>
-<a href=""><img src="https://img.shields.io/github/repo-size/dexdevlab/ebac-storybook-template-backend" height="22" alt="RepoSize"/></a>&nbsp;
+<a href=""><img src="https://img.shields.io/github/repo-size/dexdevlab/ebac-storybook-template-backend" height="22" alt="RepoSize"/></a>
 <a href=""><img src="https://img.shields.io/github/languages/code-size/dexdevlab/ebac-storybook-template-backend" height="22" alt="CodeSize"/></a>
-<br>
-<a href=""><img src="https://img.shields.io/github/forks/dexdevlab/ebac-storybook-template-backend" height="22" alt="Fork"></a>&nbsp;
-<a href=""><img src="https://img.shields.io/github/v/release/dexdevlab/ebac-storybook-template-backend" height="22" alt="Version"/></a>&nbsp;
 <a href="https://github.com/dexdevlab/ebac-storybook-template-backend/blob/main/LICENSE"><img src="https://img.shields.io/github/license/dexdevlab/ebac-storybook-template-backend" height="22" alt="License"></a>
 
 </div>
@@ -58,6 +56,12 @@ Simplesmente publique o commit normalmente no branch principal (main). Com isso,
 <hr>
 
 ## Notas de versão
+
+### v0.0.2-beta-240425
+
+- Remoção de bibliotecas em desuso
+- Ajuste no script do Express
+- Atualização do README
 
 ### v0.0.1-beta-240425
 
