@@ -57,6 +57,10 @@ Simplesmente publique o commit normalmente no branch principal (main). Com isso,
 
 ## Notas de versão
 
+### v0.0.7-beta-240425
+
+- Ajuste no script do Express para criar uma cópia temporária do arquivo de dados a fim de ser lido e editado pelo Vercel
+
 ### v0.0.6-beta-240425
 
 - Alteração na estrutura de pastas do projeto

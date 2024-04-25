@@ -2,15 +2,35 @@ const express = require("express");
 const app = express();
 const fs = require("fs").promises;
 const cors = require("cors");
-const path = require('path');
+const path = require("path");
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
 
-const dataFilePath = path.join(process.cwd(), "data/data.json");
+const workdir = process.cwd();
+
+const dataFileSrcPath = `${workdir}/data/data.json`;
+
+const dataFilePath = `${workdir}/tmp/data.json`;
+
+async function checkFileExists(file) {
+  try {
+    await fs.promises.access(
+      file,
+      fs.constants.F_OK | fs.constants.R_OK | fs.constants.W_OK
+    );
+    return true;
+  } catch {
+    return false;
+  }
+}
 
 async function getData() {
+  const exists = await checkFileExists(dataFilePath);
+  if (!exists) {
+    await fs.cp(dataFileSrcPath, dataFilePath);
+  }
   return await fs.readFile(dataFilePath, "utf8");
 }
 
