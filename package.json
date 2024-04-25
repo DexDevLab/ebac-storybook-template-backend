@@ -1,0 +1,70 @@
+{
+  "name": "ebac-storybook-template-backend",
+  "description": "Template de Aplicação Backend Express JS para exercício do Módulo 14 da Seção 'React: do Zero ao Pro' do curso 'Profissão: Engenheiro Front-End' da Instituição EBAC - Escola Britânica de Artes Criativas e Tecnologia",
+  "version": "v0.0.1-beta-240425",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "node src/express.js"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.24.4",
+    "@babel/preset-react": "^7.24.1",
+    "axios": "^1.6.8",
+    "cors": "^2.8.5",
+    "cross-var": "^1.1.0",
+    "dotenv-cli": "^7.4.1",
+    "express": "^4.19.2",
+    "flatted": "^3.3.1",
+    "serve": "^14.2.2"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "plugin:storybook/recommended"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^1.3.3",
+    "@storybook/addon-docs": "^8.0.8",
+    "@storybook/addon-essentials": "^8.0.8",
+    "@storybook/addon-interactions": "^8.0.8",
+    "@storybook/addon-links": "^8.0.8",
+    "@storybook/addon-onboarding": "^8.0.8",
+    "@storybook/blocks": "^8.0.8",
+    "@storybook/manager-api": "^8.0.8",
+    "@storybook/preset-create-react-app": "^8.0.8",
+    "@storybook/react": "^8.0.8",
+    "@storybook/react-webpack5": "^8.0.8",
+    "@storybook/test": "^8.0.8",
+    "@storybook/theming": "^8.0.8",
+    "chromatic": "^11.3.0",
+    "eslint-plugin-storybook": "^0.8.0",
+    "prop-types": "^15.8.1",
+    "storybook": "^8.0.8",
+    "storybook-dark-mode": "^4.0.1",
+    "webpack": "^5.91.0"
+  }
+}
