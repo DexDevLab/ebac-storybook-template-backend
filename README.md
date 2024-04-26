@@ -54,9 +54,7 @@ Considerando que os caminhos relativos dos arquivos na máquina local e no Verce
 1 - Faça um git clone ou o download do repositório, da forma que preferir
 
 ```bash
-
 git clone https://github.com/dexdevlab/ebac-storybook-template-backend.git
-
 ```
 
 2 - Execute `yarn` para carregar as dependências
@@ -75,17 +73,10 @@ Você pode implementar sua própria instância deste projeto clicando neste bot�
 
 #### Método GET
 
-Fornece a lista de Pokémon:
-
-```bash
-
-http://localhost:3000/
-
-```
-
-Retorno:
+Fornece a lista de Pokémon.
 
 ```json
+// http://localhost:3000/
 [
   {
     "_id": 0,
@@ -116,17 +107,12 @@ Retorno:
 
 #### Método POST
 
-Adiciona um novo Pokémon à coleção:
-
-```bash
-
-http://localhost:3000/new-pokemon
-
-```
+Adiciona um novo Pokémon à coleção.
 
 Body (JSON):
 
 ```json
+// http://localhost:3000/new-pokemon
 {
   "pid": 83,
   "name": "Farfetch'd",
@@ -137,12 +123,6 @@ Body (JSON):
 #### Método PUT
 
 Modifica um Pokémon da lista, baseado no ID contido no Banco de Dados
-
-```bash
-
-http://localhost:3000/update-pokemon/:id
-
-```
 
 Query Params:
 
@@ -155,6 +135,7 @@ Body (JSON):
 Adicione no corpo os valores a serem modificados, mas não suprima nenhum dos campos.
 
 ```json
+// http://localhost:3000/update-pokemon/:id
 {
   "pid": 84,
   "name": "Farfetch'd",
@@ -167,9 +148,7 @@ Adicione no corpo os valores a serem modificados, mas não suprima nenhum dos ca
 Remove um Pokémon da lista, baseado no ID contido no Banco de Dados
 
 ```bash
-
 http://localhost:3000/delete-pokemon/:id
-
 ```
 
 Query Params:
@@ -181,6 +160,10 @@ Query Params:
 <hr>
 
 ## Notas de versão
+
+### v1.0.2-240426
+
+- Atualização do README
 
 ### v1.0.1-240425
 
