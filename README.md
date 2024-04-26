@@ -161,6 +161,10 @@ Query Params:
 
 ## Notas de versão
 
+### v1.0.3-240426
+
+- Atualização do README
+
 ### v1.0.2-240426
 
 - Atualização do README
